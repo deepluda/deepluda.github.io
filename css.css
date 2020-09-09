@@ -8,7 +8,7 @@ a:active {color: #FFFF00;}·
 .right {float: right;}
 .clear {clear: both;}
 .title {font-size: 16px; font-weight: bold; margin: 20px 0 10px 0;}
-.title2 {font-size: 18px; font-weight: bold; margin: 20px 0 10px 0; color:red;}
+.title2 {font-size: 18px; font-weight: bold; margin: 20px 0 10px 0;align:center}
 .disabled {color: gray;}
 h1 { margin:0; padding:6px 0; width:440px; color:#f36d6e; font:normal 46px/1.2em Arial, Helvetica, sans-serif; letter-spacing:-2px;}
 h1 span { color:#fff;}
