@@ -1,87 +1,454 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<base href="/deepluda.github.io/">
+<html lang="en">
+<head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>The First International Workshop on Deep Learning in Large-scale Unstructured Data Analytics (DeepLUDA 2020)</title>
-<link rel="stylesheet" type="text/css" href="/deepluda.github.io/css.css">
-	</head>
-	<body>
-		<div id="container">
-	<div id="header" style="background: url(./mainpage.png); background-size: 1000px 250px;position:relative;">
-				<h1 style="margin-left:20px;">
-					<div id="apple"><a  style="font-size: 28px;" href="https://deepluda.github.io/">DeepLUDA <span style="font-size: 28px;">2020</span></a></div>
-					<small>International Workshop on <br /> Deep Learning in Large-scale Unstructured Data Analytics <br />
-					<div id="apple">
-					<a href="http://www.tjudb.cn/apwebwaim2020/">in conjunction with APWeb-WAIM 2020 </a></div></small>
-				</h1>
-				<div style="position:absolute; bottom:0; right:0;">
-				<p style="color:#FFFF00;line-height: 0;font-size:24px;text-align: right; margin-right:10px;font-style:oblique;font-family:STLiti;font-weight: bold;">September 20, 2020, Tianjin, China</p>
-				</div>
-			</div>
-	<div id="main">
-	<div id="menu">
-		<div class="line"></div>
-			<div><a class="item" href="/">Call for Papers</a></div>
-			<div><a class="item" href="/org.html">Organization</a></div>
-			<div><a class="item" href="/dates.html">Important Dates</a></div>
-			<div><a class="item" href="/sub.html">Paper Submission</a></div>
-			<div><a class="item" href="/inv.html">Invited Talks</a></div>
-			<div><a class="item" href="/acc.html">Accepted Papers</a></div>
-			<div><a class="item" href="/cam.html">Camera-Ready Instructions</a></div>
-			<div><a class="item" href="/wor.html">Workshop Program</a></div>
-			<div><a class="item" href="/reg.html">Registration</a></div>
-			<div class="line"></div>
-			
-			<div><img src="LNCS.png"></div>
-			
-		</div>
-		<div id="content">
-			<h2 style="font-size: 32px; font-weight: bold; text-align: center;">
-				 International Workshop on Deep Learning <br>
-				 in Large-scale Unstructured Data Analytics<br>
-				(DeepLUDA 2020)
-			</h2>
-                <div class="title2">Considering the current situation of COVID-19 globally, the APWeb-WAIM 2020 Organizing Committee has decided that APWeb-WAIM 2020 and its workshops will be a fully virtual events. The DeepLUDA 2020 workshop date is 20 September, 2020 </div>
-		<div class="title2">Author registration due: 10 September, 2020</div>
-		<div class="title">Workshop Topics</div>
-			
-                <p>This workshop focuses on deep learning applied to large-scale unstructured data, such as that found in social media, healthcare, IoT devices, and online reviews. The international event will bring together academic and industrial researchers to exchange cutting edge research enabling Large-scale Unsupervised learning. Deep Learning to perform in a reliable and user-independent manner handling uncertainty and unforeseen events.
-		</p>
-		
-		<p>The topics of interest include, but are not limited to the following:</p>
+<meta name="description" content="The First International Workshop on Deep Learning in Large-scale Unstructured Data Analytics (DeepLUDA 2020)">
+<meta name="author" content="qii404">
 
-		<div class="title">Deep learning:</div>
-		
-		<ul>
-			<li>Data Cleaning, Analysis Algorithms</li>
-			<li>Data Storage and Management</li>
-			<li>Privacy Preservation and Security Issues in Big Data</li>
-			<li>Data Compressionn</li>
-			<li>Machine Learning</li>
-			<li>Deep learning with big or small data</li>
-			<li>Deep Recognition Models</li>
-			<li>Deep Generative Models</li>
-			<li>Parallel and distributed computing techniques</li>
-			<li>Visualization methods for the analysis of large-scale data</li>
-			<li>Machine Learning in Natural Language Processing</li>
-			<li>Applications of Natural Language Processing</li>
-		</ul>
-		
-		<br>
-		
-		
-		
-					<br><br><br>
-		</div>
-		<div class="clear"></div>
-	</div>
-	<div id="footer">
-		<div style="text-align: center; font-size: small;">
-			Copyright &copy; 2019-2020, DeepLUDA <br />Contact us: pjy2018@tiangong.edu.cn
-		</div>
-	</div>
+<!-- Favicons
+    ================================================== -->
+<!-- <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png"> -->
+
+<!-- Bootstrap -->
+<link rel="stylesheet" type="text/css"  href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.min.css">
+
+<!-- Stylesheet
+    ================================================== -->
+<link rel="stylesheet" type="text/css"  href="css/style.css">
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300" rel="stylesheet" type="text/css">
+
+<!-- 9-4918 -->
+<link rel="stylesheet" type="text/css" href="css/theme.css">
+
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<!-- Navigation -->
+<nav id="menu" class="navbar navbar-default navbar-fixed-top">
+  <div class="container"> 
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a class="navbar-brand page-scroll" href="#page-top"><!-- <i class="fa fa-moon-o fa-rotate-90"></i> -->DeepLUDA</a> </div>
+    
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#page-top" class="page-scroll">Home</a></li>
+        <li><a href="#topic-container" class="page-scroll">Topics</a></li>
+        <li><a href="#org-container" class="page-scroll">ORGANIZATION</a></li>
+        <li><a href="#schedule-section" class="page-scroll">SCHEDULE</a></li>
+        <li><a href="#paper-submission" class="page-scroll">SUBMISSION</a></li>
+        <li><a href="#camera-ready-container" class="page-scroll">CAMERA-READY</a></li>
+        <li><a href="#accept-papers" class="page-scroll">ACCEPTED</a></li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse --> 
+  </div>
+  <!-- /.container-fluid --> 
+</nav>
+<!-- Header -->
+<header id="header">
+  <div class="intro text-center">
+    <div class="overlay">
+      <div class="container">
+        <div class="row">
+          <div class="intro-text">
+            <h1>Welcome to <span class="brand">DeepLUDA 2020</span></h1>
+            <p>International Workshop on Deep Learning in Large-scale Unstructured Data Analytics</p>
+          </div>
+        </div>
+      </div>
+    <div class="top-reg-container">
+      <a href="http://www.tjudb.cn/apwebwaim2020/registration" target="_blank">Registration</a>&nbsp;&nbsp;
+      <a href="http://www.tjudb.cn/apwebwaim2020/" target="_blank">Travel Information</a>
+    </div>
+    </div>
+  </div>
+</header>
+
+<!-- Workshop Topics -->
+<div id="topic-container" class="1text-center">
+  <div class="container">
+    <div class="col-md-10 col-md-offset-1 section-title">
+      <h2 class="text-center">Workshop Topics</h2>
+      <blockquote class="generic-blockquote">
+        <b>Notice:</b> Considering the current situation of COVID-19 globally, the APWeb-WAIM 2020 Organizing Committee has decided that APWeb-WAIM 2020 and its workshops will be a fully virtual events. The DeepLUDA 2020 workshop date is 20 September, 2020
+      </blockquote>
+      <p>This workshop focuses on deep learning applied to large-scale unstructured data, such as that found in social media, healthcare, IoT devices, and online reviews. The international event will bring together academic and industrial researchers to exchange cutting edge research enabling Large-scale Unsupervised learning. Deep Learning to perform in a reliable and user-independent manner handling uncertainty and unforeseen events. The topics of interest include, but are not limited to the following:</p>
+      <h3 class="text-center">Deep learning:</h3>
+      <ul class="text-center top-topics">
+        <li>Data Cleaning, Analysis Algorithms</li>
+        <li>Data Storage and Management</li>
+        <li>Privacy Preservation and Security Issues in Big Data</li>
+        <li>Data Compressionn</li>
+        <li>Machine Learning</li>
+        <li>Deep learning with big or small data</li>
+        <li>Deep Recognition Models</li>
+        <li>Deep Generative Models</li>
+        <li>Parallel and distributed computing techniques</li>
+        <li>Visualization methods for the analysis of large-scale data</li>
+        <li>Machine Learning in Natural Language Processing</li>
+        <li>Applications of Natural Language Processing</li>
+      </ul>
+    </div>
+
+  </div>
 </div>
 
-	</body>
+<!-- tableeeeee -->
+<div id="org-container">
+  <div class="container">
+    <div class="col-md-10 col-md-offset-1">
+      <h2 class="text-center">Organization</h2>
+      <h3>Organizers</h3>
+      <div class="row org-row">
+        <div class="col-xs-4 col-md-3">Tae-Sun Chung</div>
+        <div class="col-xs-8 col-md-9">Ajou University, Korea</div>
+      </div>
+
+      <div class="row org-row">
+        <div class="col-xs-4 col-md-3">Rize Jin</div>
+        <div class="col-xs-8 col-md-9">Tiangong University, China</div>
+      </div>
+
+      <h3>Program Chair</h3>
+      <div class="row org-row">
+        <div class="col-xs-4 col-md-3">Joon-Young Paik</div>
+        <div class="col-xs-8 col-md-9">Tiangong University, China</div>
+      </div>
+
+      <h3>Program Committees</h3>
+      <div class="row org-row">
+        <div class="col-xs-4 col-md-3">Shaoqian Yu</div>
+        <div class="col-xs-8 col-md-9">Hunan University of Industry and Business, China</div>
+      </div>
+      <div class="row org-row">
+        <div class="col-xs-4 col-md-3">Seungmin Oh</div>
+        <div class="col-xs-8 col-md-9">Kongju National University, Korea</div>
+      </div>
+      <div class="row org-row">
+        <div class="col-xs-4 col-md-3">Liangfu Lu</div>
+        <div class="col-xs-8 col-md-9">Tianjin University, China</div>
+      </div>
+      <div class="row org-row">
+        <div class="col-xs-4 col-md-3">Seungjae Shin</div>
+        <div class="col-xs-8 col-md-9">Electronics and Telecommunications Research Institute (ETRI), Korea</div>
+      </div>
+      <div class="row org-row">
+        <div class="col-xs-4 col-md-3">Xun Luo</div>
+        <div class="col-xs-8 col-md-9">Tianjin University of Technology, China</div>
+      </div>
+      <div class="row org-row">
+        <div class="col-xs-4 col-md-3">Yunbo Rao</div>
+        <div class="col-xs-8 col-md-9">University of Electronic Science and Technology of China, China</div>
+      </div>
+      <div class="row org-row">
+        <div class="col-xs-4 col-md-3">Yenewondim Biadgie</div>
+        <div class="col-xs-8 col-md-9">Ajou University, Korea</div>
+      </div>
+      <div class="row org-row">
+        <div class="col-xs-4 col-md-3">Ziyang Liu</div>
+        <div class="col-xs-8 col-md-9">Kyonggi University, Korea</div>
+      </div>
+      <div class="row org-row">
+        <div class="col-xs-4 col-md-3">Muhammad Attique</div>
+        <div class="col-xs-8 col-md-9">Sejong University, Korea</div>
+      </div>
+      <div class="row org-row">
+        <div class="col-xs-4 col-md-3">Caie Xu</div>
+        <div class="col-xs-8 col-md-9">University of Yamanashi, Japan</div>
+      </div>
+      <div class="row org-row">
+        <div class="col-xs-4 col-md-3">Huayan Zhang</div>
+        <div class="col-xs-8 col-md-9">Tiangong University, China</div>
+      </div>
+      <div class="row org-row">
+        <div class="col-xs-4 col-md-3">Gaoyang Shan</div>
+        <div class="col-xs-8 col-md-9">Ajou University, Korea</div>
+      </div>
+
+      <h3>Supported by</h3>
+      <div class="row org-row">
+        <div class="col-xs-12 col-md-12">Ajou University</div>
+      </div>
+      <div class="row org-row">
+        <div class="col-xs-12 col-md-12">Tiangong University</div>
+      </div>
+      <div class="row org-row">
+        <div class="col-xs-12 col-md-12">Tianjin International Joint Research and Development Center of Autonomous Intelligence Technology and Systems</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section id="schedule-section">
+  <div class="container">
+    <h2 class="section-heading text-center mb-5">Schedule</h2>
+    
+    <!-- Nav tabs -->
+    <ul class="schedule-nav nav nav-pills nav-fill" id="myTab" role="tablist">
+      <li class="nav-item mr-2 text-center active" style="width: 100%;">
+        <a style="background: #509cdb;" class="nav-link active" id="tab-1" data-toggle="tab" href="#tab-1-content" role="tab" aria-controls="tab-1-content" aria-selected="true">
+          <!-- <span class="1meta">(Wed 12, Oct)</span> -->
+          <span class="heading">Day 1 (Wed 12, Oct)</span>
+        </a>
+      </li>
+      
+    </ul>
+    
+    <!-- Tab panes -->
+    <div class="schedule-tab-content tab-content">
+      <div class="tab-pane active" id="tab-1-content" role="tabpanel" aria-labelledby="tab-1">
+        <div class="item item-talk">
+          <div class="meta">
+            <h4 class="time mb-3">14:00 – 14:40</h4>
+            <div class="profile">
+              <div class="name"><a class="theme-link" href="#modal-speaker-1" data-toggle="modal" data-target="#modal-speaker-1"></a></div>
+            </div><!--//profile-->
+          </div><!--//meta-->
+          <div class="content">
+            <h3 class="title mb-3">Invited Talk</h3>
+            <div class="desc">Prof. Jianming Wang (Director, Tianjin International Joint Research and Development Center of Autonomous Intelligence Technology and Systems)</div>
+          </div><!--//content-->
+        </div><!--//item-->
+        <div class="item item-talk">
+          <div class="meta">
+            <h4 class="time mb-3">14:40 – 15:00</h4>
+            <div class="profile">
+            </div><!--//profile-->
+          </div><!--//meta-->
+          <div class="content">
+            <h3 class="title mb-3">Label Propagation Algorithm Based on Topological Potential</h3>
+            <div class="desc">Wang Guocheng (Nanjing University of Aeronautics and Astronautics) and Xia Zhengyou (Nanjing University of Aeronautics and Astronautics)</div>
+          </div><!--//content-->
+        </div><!--//item-->
+        <div class="item item-other">
+          <div class="meta">
+            <h4 class="time mb-3">15:00 – 15:20</h4>
+          </div><!--//meta-->
+          <div class="content">
+            <h3 class="title mb-3">Coffee Break</h3>
+            <div class="desc">Coffee and cakes lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+          </div><!--//content-->
+        </div><!--//item-->
+        <div class="item item-talk">
+          <div class="meta">
+            <h4 class="time mb-3">15:20 – 15:40</h4>
+            <div class="profile">
+            </div><!--//profile-->
+          </div><!--//meta-->
+          <div class="content">
+            <h3 class="title mb-3">LBNet: A Model for Judicial Reading Comprehension</h3>
+            <div class="desc">Hao Liu (Chinese Academy of Sciences University) and Jungang Xu (Chinese Academy of Sciences University)</div>
+          </div><!--//content-->
+        </div><!--//item-->
+        <div class="item item-talk">
+          <div class="meta">
+            <h4 class="time mb-3">15:40 – 16:00</h4>
+            <div class="profile">
+            </div><!--//profile-->
+          </div><!--//meta-->
+          <div class="content">
+            <h3 class="title mb-3">Deep Semantic Hashing for Large-scale Image Retrieval</h3>
+            <div class="desc">Yang Yulin (Tiangong University), Jin Rize (Tiangong University) and Xu Cai (University of Yamanashi)</div>
+          </div><!--//content-->
+        </div><!--//item-->
+
+      </div><!--//tab-1-content-->
+    </div><!--//schedule-tab-content-->
+  </div><!--//container-->
+</section><!--//schedule-section-->
+
+<!-- Paper Submission -->
+<div id="paper-submission" class="1text-center">
+  <div class="container submit-date-container">
+    <div class="col-md-10 col-md-offset-1 section-title">
+      <h2 class="text-center">Paper Submission</h2>
+      <p>
+        All papers must be submitted through EasyChair system, via the following link. The submission site is now open.
+        <a href="https://easychair.org/conferences/?conf=deepluda2020">
+          https://easychair.org/conferences/?conf=deepluda2020
+        </a>
+      </p>
+      
+      <p>The conference proceedings, including all accepted papers, will be published in the Springer Lecture Notes in Computer Science (LNCS) series. Authors should avoid the use of non-English fonts to avoid problems with printing and viewing the submissions. All accepted papers MUST follow strictly the instructions for LNCS Authors. Springer LNCS site offers style files and information: <a href="http://www.springer.com/computer/lncs?SGWID=0-164-6-793341-0 <view-source:http://www.springer.com/computer/lncs?SGWID=0-164-6-793341-0>">http://www.springer.com/computer/lncs?SGWID=0-164-6-793341-0</a>.</p>
+      <p>Submissions must be original (not previously published and not under review in other forums). This applies to papers on all tracks of the conference. Authors are advised to interpret these limitations strictly and to contact the PC chairs in case of doubt. Each accepted paper must be accompanied by at least one full registration, and an author is expected to present the paper at the conference, otherwise, the paper will be removed from the proceedings and the LNCS digital library.</p>
+      <p>The review process is single-blinded. There is no need for authors to mask their names and affiliations in the manuscript. The maximal length of the paper is <b>15</b> pages.</p>
+
+    </div>
+    <div class="row text-center">
+      <div class="col-xs-6 col-md-3"> <i class="fa fa-calendar-o"></i>
+        <h4>Submission</h4>
+        <p class="paper-submission-date">26 June, 2020 extended</p>
+      </div>
+      <div class="col-xs-6 col-md-3"> <i class="fa  fa-check-square-o"></i>
+        <h4>Acceptance</h4>
+        <p class="paper-submission-date">31 July, 2020 extended</p>
+      </div>
+      <div class="col-xs-6 col-md-3"> <i class="fa fa-chain"></i>
+        <h4>Registration</h4>
+        <p class="paper-submission-date">10, September, 2020 extended</p>
+      </div>
+      <div class="col-xs-6 col-md-3"> <i class="fa  fa-camera   "></i>
+        <h4>Camera-Ready</h4>
+        <p class="paper-submission-date">TBA</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CAMERA READY INSTRUCTION -->
+<div id="camera-ready-container">
+  <div class="container">
+    <div class="col-md-10 col-md-offset-1 section-title">
+      <div class="row text-center" style="margin-bottom: 20px;">
+        <h2>Camera Ready Instruction</h2>
+        <div class="col-md-12">
+          <blockquote class="generic-blockquote">
+            <p>Please be informed that the deadline for submitting the camera-ready paper is 15 August, 2020. Note that this is a hard deadline and cannot be extended, i.e., late submission will not be considered for the inclusion into the proceedings.</p>
+          </blockquote>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-4 col-md-2 step-number">Step 1</div>
+        <div class="col-xs-8 col-md-10 camera-step-desc">
+          <p>
+            Format your paper according to the LNCS template and generate the corresponding PDF file of your manuscript
+            <a href="http://www.springer.com/gp/computer-science/lncs/conference-proceedings-GUIDELINES">GUIDELINES</a>
+            The length of papers is limited to 15 LNCS pages, including all text, figures, references and appendices.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-4 col-md-2 step-number">Step 2</div>
+        <div class="col-xs-8 col-md-10 camera-step-desc">
+          <p>
+            Complete the attached file
+            <a href="http://conferences.cis.umac.mo/apwebwaim2018/files/contact.zip" download="contact.zip"> contact.zip</a>
+            You should fill in the surnames of all authors, first names of all authors, contact author’s name and mailing address as well as the contact author’s email in the attached file contact.txt. Once data processing has been finished, Springer shall contact the corresponding authors and ask him/her to check his/her papers.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-4 col-md-2 step-number">Step 3</div>
+        <div class="col-xs-8 col-md-10 camera-step-desc">
+          <p>
+            Complete the attached
+            <a href="/Contract_Book_Contributor_Consent_to_Publish_LNCS_SIP.pdf" download="Contract_Book_Contributor_Consent_to_Publish_LNCS_SIP.pdf">copyright form</a>
+            . The corresponding author of each paper, acting on behalf of all of the authors of that paper, must complete and sign a Consent-to-Publish form. 
+            <span style="/*color: #a22b2b*/">The corresponding author signing the copyright form should match the corresponding author marked on the paper</span>
+            . Once the files have been sent to Springer, changes relating to the authorship of the papers cannot be made.
+          </p>
+          <p>
+            Note that (1) we do not accept digital signatures, so please make sure that all forms have been signed in ink; (2) one author may sign on behalf of all the authors of a particular paper; (3) scan the completed copyright form in electronic format (in PDF) and rename it to be DEEPLUDA_XXX_cr.pdf where XXX is your paper ID.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-4 col-md-2 step-number">Step 4</div>
+        <div class="col-xs-8 col-md-10 camera-step-desc">
+          <p>Create a folder named DEEPLUDA_XXX, where XXX is your paper ID.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-4 col-md-2 step-number">Step 5</div>
+        <div class="col-xs-8 col-md-10 camera-step-desc">
+          <p>Place the following files in the folder DEEPLUDA_XXX (created from Step 4):</p>
+          <p>the paper source files. Note that you should include all the source files, e.g., if you are using Latex, then you should include LaTeX2e files for the text and PS/EPS or PDF/JPG files for all figures, as well as the Final DVI file.</p>
+          <p>the PDF file (from Step 1)</p>
+          <p>the contact.txt file (from Step 2)</p>
+          <p>the copyright form file (from Step 3)</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-4 col-md-2 step-number">Step 6</div>
+        <div class="col-xs-8 col-md-10 camera-step-desc">
+          <p>Zip up the folder from Step 5 and call it DEEPLUDA_XXX.zip.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-4 col-md-2 step-number">Step 7</div>
+        <div class="col-xs-8 col-md-10 camera-step-desc">
+          <p>Send the zip file DEEPLUDA_XXX.zip (from Step 6) to <a href="mailto:pjy2018@tjpu.edu.cn">pjy2018@tjpu.edu.cn</a></p>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+<!-- Accepted Papers -->
+<div id="accept-papers">
+  <div class="container 1text-center">
+    <div class="col-md-7 col-md-offset-3 section-title ">
+      <h2 class="text-center">Accepted Papers</h2>
+        <ol class="ordered-list">
+          <li>
+            <p>
+              <span>Label Propagation Algorithm Based on Topological Potential</span><br>
+              <span class='accepte-list-author'>Authors: Wang Guocheng and Xia Zhengyou</span>
+            </p>
+          </li>
+          <li>
+            <p>
+              <span>Graph Attention-Convolution-Attention Networks for Traffic Forecasting</span><br>
+              <span class='accepte-list-author'>Authors: Sikai Zhang, Hong Zheng, Jiamou Liu and Song Yang</span>
+            </p>
+          </li>
+          <li>
+            <p>
+              <span>LBNet: A Model for Judicial Reading Comprehension</span><br>
+              <span class='accepte-list-author'>Authors: Hao Liu and Jungang Xu</span>
+            </p>
+          </li>
+          <li>
+            <p>
+              <span>A survey on Dimensionality Reduction Techniques and Clustering Methods</span><br>
+              <span class='accepte-list-author'>Authors: Jayashree and Shivaprakash T</span>
+            </p>
+          </li>
+          <li>
+            <p>
+              <span>Deep Semantic Hashing for Large-scale Image Retrieval</span><br>
+              <span class='accepte-list-author'>Authors: Yang Yulin, Jin Rize and Xu Cai</span>
+            </p>
+          </li>
+        </ol>
+      </div>
+  </div>
+</div>
+
+
+<div id="footer">
+  <div class="container text-center">
+    <div class="fnav">
+      <p>Copyright &copy; 2020. DeepLUDA All rights reserved</p>
+      <p><a href="/2020old/">Older version</a></p>
+    </div>
+  </div>
+</div>
+<script type="text/javascript" src="js/jquery.1.11.1.js"></script> 
+<script type="text/javascript" src="js/bootstrap.min.js"></script> 
+<script type="text/javascript" src="js/main.js"></script>
+</body>
 </html>
